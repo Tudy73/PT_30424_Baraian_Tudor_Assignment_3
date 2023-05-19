@@ -7,6 +7,9 @@ import model.Product;
 import java.util.List;
 import java.util.NoSuchElementException;
 
+/**
+ * Class used to create the product methods that access the database
+ */
 public class ProductBLL {
     private ProductDAO productDAO;
     public ProductBLL(){

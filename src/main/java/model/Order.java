@@ -1,5 +1,7 @@
 package model;
-
+/**
+ * Class used to create the order object(having the corresponding fields in the database) with the setters and getters
+ */
 public class Order {
     private int id;
     private int idClient;

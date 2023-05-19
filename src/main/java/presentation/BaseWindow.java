@@ -3,11 +3,16 @@ package presentation;
 import javax.swing.*;
 import java.awt.*;
 import java.lang.reflect.ParameterizedType;
-
+/**
+* Class used to create a window in which There are buttons that open insertWindow of the specific type or viewWindow
+ */
 public class BaseWindow extends JFrame{
     JPanel jPanel;
     private final Class<?> clazz;
     @SuppressWarnings("unchecked")
+    /**
+     * constructor sets the frame specifics and ads the two buttons
+     */
     public BaseWindow(Class<?> clazz){
         this.clazz = clazz;
         String name = clazz.getSimpleName();

@@ -12,7 +12,9 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.List;
-
+/**
+ * Class used to create a window in which There are two jComboBoxes from which we can select a client and a product and also a quantity text field and a button
+ */
 public class CommandWindow extends JFrame {
     private JPanel jPanel;
 
@@ -20,6 +22,10 @@ public class CommandWindow extends JFrame {
     private JTextField quantityText;
     private JButton button;
     private GridBagConstraints gbc;
+
+    /**
+     * constructor sets the jframe specifics, ads the button listener and instatiates the comboBoxes and quantity text field
+     */
     public CommandWindow(){
         setTitle("Order");
         pack();

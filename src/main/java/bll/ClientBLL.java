@@ -7,6 +7,9 @@ import model.Client;
 import java.util.List;
 import java.util.NoSuchElementException;
 
+/**
+ * Class used to create the client methods that access the database
+ */
 public class ClientBLL {
     private ClientDAO clientDAO;
     public static int idLimit;

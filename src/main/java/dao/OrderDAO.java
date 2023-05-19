@@ -8,11 +8,16 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.logging.Level;
-
+/**
+ * Class used to create the order data access methods and that has the abstractDAO methods
+ */
 public class OrderDAO extends AbstractDAO<Order>{
     public OrderDAO() {
         super();
     }
+    /**
+     * method for inserting the order in the database
+     */
     public void insert(Order t,int i) {
         Connection connection = null;
         PreparedStatement statement = null;

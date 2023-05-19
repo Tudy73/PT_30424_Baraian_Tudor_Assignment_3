@@ -10,6 +10,9 @@ import java.lang.reflect.Method;
 import java.text.DecimalFormat;
 import java.util.List;
 
+/**
+ * Class used to create a window in which the user sees the current rows from the table and can make changes and/or remove some fields
+ */
 public class viewWindow extends JFrame{
     private JPanel jPanel;
 
@@ -20,6 +23,9 @@ public class viewWindow extends JFrame{
     Class<?> bll = null;
     private JTextField [][]pane = new JTextField[20][15];
     private JCheckBox[] checker = new JCheckBox[15];
+    /**
+     * constructor calls the generateViews method
+     */
     public viewWindow(Class<?> clazz){
         className = clazz.getSimpleName();
         setTitle("Table");
@@ -34,6 +40,9 @@ public class viewWindow extends JFrame{
         generateViews(clazz);
         add(jPanel);
     }
+    /**
+     * method generates the table column names, the textfields with the data, the checkboxes for each of them, and the modify button
+     */
     private void generateViews(Class<?> object1){
 
         JButton jButton = new JButton();
@@ -138,6 +147,9 @@ public class viewWindow extends JFrame{
         gbc.gridy++;
         jPanel.add(jButton,gbc);
     }
+    /**
+     * creates an instance of the class provided as parameter
+     */
     public static <T> T createInstance(Class<T> clazz) throws Exception {
         Constructor<T> constructor = clazz.getDeclaredConstructor();
         constructor.setAccessible(true);

@@ -14,6 +14,9 @@ import java.util.logging.Logger;
  * @Since: Apr 03, 2017
  * @Source: http://theopentutorials.com/tutorials/java/jdbc/jdbc-mysql-create-database-example/
  */
+/**
+ * Class used to make a connection to the database
+ */
 public class ConnectionFactory {
 
 	private static final Logger LOGGER = Logger.getLogger(ConnectionFactory.class.getName());

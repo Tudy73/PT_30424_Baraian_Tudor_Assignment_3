@@ -3,8 +3,15 @@ package presentation;
 import javax.swing.*;
 import java.awt.*;
 
+/**
+ * Class used to create a window in which There are buttons that open a commandWindow
+ */
 public class OrderWindow extends JFrame {
     JPanel jPanel;
+
+    /**
+     * constructor ads the buttons and listeners
+     */
     public OrderWindow(){
         setTitle("Orders");
         pack();

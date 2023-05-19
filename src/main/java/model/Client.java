@@ -1,5 +1,8 @@
 package model;
 
+/**
+ * Class used to create the client object(having the corresponding fields in the database) with the setters and getters
+ */
 public class Client {
     private int id;
     private String name;

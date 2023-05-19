@@ -1,5 +1,8 @@
 package model;
 
+/**
+ * Class used to create the product object(having the corresponding fields in the database) with the setters and getters
+ */
 public class Product {
     private int id;
     private String name;

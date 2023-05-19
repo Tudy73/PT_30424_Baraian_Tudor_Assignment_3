@@ -7,7 +7,9 @@ import java.awt.*;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
-
+/**
+ * Class used to create a window in which There are generated some fields for the columns of a table in which the employee can enter the data of a new row and commit
+ */
 public class insertWindow extends JFrame {
     private JPanel jPanel;
     private GridBagConstraints gbc;
@@ -15,6 +17,9 @@ public class insertWindow extends JFrame {
     private JLabel []name = new JLabel[5];
     Class<?> bll = null;
     private JTextField []pane = new JTextField[5];
+    /**
+     * constructor that calls the method generateViews
+     */
     public insertWindow(Class<?> clazz){
         className = clazz.getSimpleName();
         setTitle("Insert");
@@ -29,6 +34,9 @@ public class insertWindow extends JFrame {
         generateViews(clazz);
         add(jPanel);
     }
+    /**
+     * method that ads the button listener and genereates through reflection the table column names and the textfields in which the user enters data
+     */
     private void generateViews(Class<?> object1){
 
         JButton jButton = new JButton();
@@ -84,7 +92,9 @@ public class insertWindow extends JFrame {
             }
         });
         jPanel.add(jButton,gbc);
-    }
+    }/**
+     * methods takes a class and returns a new instance of that class
+     */
     public static <T> T createInstance(Class<T> clazz) throws Exception {
         Constructor<T> constructor = clazz.getDeclaredConstructor();
         constructor.setAccessible(true);

@@ -5,9 +5,14 @@ import model.Product;
 
 import javax.swing.*;
 import java.awt.*;
-
+/**
+ * Class used to create a window in which There are buttons for client, product, and order windows
+ */
 public class ApplicationWindow extends JFrame{
     JPanel jPanel;
+    /**
+     * constructor sets the specifics for the Jframe and ads the buttons presented
+     */
     public ApplicationWindow(){
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setTitle("init");

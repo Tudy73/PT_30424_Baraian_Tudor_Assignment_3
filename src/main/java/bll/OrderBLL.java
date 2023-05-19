@@ -6,6 +6,9 @@ import model.Order;
 
 import java.util.NoSuchElementException;
 
+/**
+ * Class used to create the order methods that access the database
+ */
 public class OrderBLL {
     private OrderDAO orderDAO;
     public OrderBLL(){

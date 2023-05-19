@@ -13,6 +13,9 @@ import presentation.ApplicationWindow;
  *          Research Laboratory, http://dsrl.coned.utcluj.ro/
  * @Since: Apr 03, 2017
  */
+/**
+ * Class used to create the applicatoin window
+ */
 public class Start {
 	protected static final Logger LOGGER = Logger.getLogger(Start.class.getName());
 
